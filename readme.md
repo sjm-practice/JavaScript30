@@ -19,5 +19,5 @@ Course repo: https://github.com/wesbos/JavaScript30
 * sidenote, similarly animations have an animation end event as well
 
 #### 02 JS and CSS Clock
-* ...
+* practice with css transition, transform, transform-origin, transform-timing-function
 
