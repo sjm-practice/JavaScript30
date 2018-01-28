@@ -78,6 +78,19 @@
   </style>
 
   <script>
+    const secondHand = document.querySelector(".second-hand");
+
+    const setClock = () => {
+      const currTime = new Date();
+      const seconds = currTime.getSeconds()
+      const secondsDegrees = ((seconds / 60) * 360) + 90;
+      secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+      console.log(seconds);
+      
+    }
+
+    setInterval(setClock, 1000);
   </script>
 </body>
 </html>
