@@ -71,20 +71,27 @@
     }
 
     .hour-hand {
+      background: darkslateblue;
     }
     
     .minute-hand {
+      background: darkolivegreen;
     }
   </style>
 
   <script>
     const secondHand = document.querySelector(".second-hand");
+    const minutedHand = document.querySelector(".minute-hand");
 
     const setClock = () => {
       const currTime = new Date();
       const seconds = currTime.getSeconds()
       const secondsDegrees = ((seconds / 60) * 360) + 90;
       secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+      const minutes = currTime.getMinutes();
+      const minutesDegress = ((minutes / 60) * 360) +90;
+      minutedHand.style.transform = `rotate(${minutesDegress}deg)`;
 
       console.log(seconds);
       
