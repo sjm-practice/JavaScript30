@@ -58,13 +58,32 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
   <script>
-    window.addEventListener("keydown", (e) => {
+    function playSound(e) {
       const audio = document.querySelector(`audio[data-key='${e.keyCode}']`);
+      const key = document.querySelector(`.key[data-key='${e.keyCode}']`);
       if (audio) {
         audio.currentTime = 0; // rewind to start (allow multiple quick plays)
         audio.play();
+        key.classList.add("playing");
       }
-    });
+    };
+
+    function removeTransition(e) {
+      // NOTE, if this was defined as an arrow function instead, you get different behavior
+      // it seems to get called twice, or this goes away, regardless, an error shows in console
+
+      // when a transition occurs, many transitions actually happen (border, color, ...)
+      //  so typically, you pick just one tranition event (the longest), and act on that event
+      if (e.propertyName !== "transform") return;
+
+        // 'this' will be whatever element the event was called against
+        this.classList.remove("playing");
+    };
+
+    const keys = document.querySelectorAll(".key");
+    keys.forEach(key => key.addEventListener("transitionend", removeTransition));
+
+    window.addEventListener("keydown", playSound);
   </script>
 
 
