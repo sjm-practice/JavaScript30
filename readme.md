@@ -18,3 +18,6 @@ Course repo: https://github.com/wesbos/JavaScript30
   - note, if using an arrow function, the behavior seems different (check this)
 * sidenote, similarly animations have an animation end event as well
 
+#### 02 JS and CSS Clock
+* ...
+
