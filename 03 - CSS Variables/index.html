@@ -65,6 +65,17 @@
   </style>
 
   <script>
+    const inputs = document.querySelectorAll(".controls input");
+
+    function handleUpdate() {
+      console.log(this.name, this.value);
+    }
+
+    // update whenever the inputs have changed (change event fires when done being set)
+    inputs.forEach(input => input.addEventListener("change", handleUpdate));
+
+    // update mouse changes the inputs
+    inputs.forEach(input => input.addEventListener("mousemove", handleUpdate));
   </script>
 
 </body>

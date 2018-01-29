@@ -24,4 +24,9 @@ Course repo: https://github.com/wesbos/JavaScript30
   - e.g. minutesHand.style.transform = "rotate(90deg)";
 
 #### 03 CSS Variables
-* ...
+* pretty powerful. works similar to vars in sass or less. but those are done at compile time.
+  - css var, work realtime dynamically. when you change the value of a variable, all the elements get updated realtime.
+* NOTE: document.querySelectorAll returns a NodeList, not an array. At a glance, it looks like an array (ie, in the console),
+but notice, NodeList does not have many of the functions / methods an Array has.
+  - it does have some, but less.
+  - sometimes, developers convert NodeList to an array, to get access to those other useful prototype functions
