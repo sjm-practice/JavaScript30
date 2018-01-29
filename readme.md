@@ -30,3 +30,7 @@ Course repo: https://github.com/wesbos/JavaScript30
 but notice, NodeList does not have many of the functions / methods an Array has.
   - it does have some, but less.
   - sometimes, developers convert NodeList to an array, to get access to those other useful prototype functions
+* dataset - is a useful attribute / property of an element, which is an object of all the data-* attributes of an element
+* scoping / cascading does apply to variables
+  - e.g. if you at a lower level, assign a different value to a variable, the value will be applied just in that scope
+    + `<h2 style="--base: #BADA55;">Header Text</2>`
