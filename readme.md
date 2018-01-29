@@ -22,5 +22,6 @@ Course repo: https://github.com/wesbos/JavaScript30
 * practice with css transition, transform, transform-origin, transform-timing-function
 * can easily access an elements style property, using javascript object property access
   - e.g. minutesHand.style.transform = "rotate(90deg)";
-* ...
 
+#### 03 CSS Variables
+* ...
