@@ -36,4 +36,4 @@ but notice, NodeList does not have many of the functions / methods an Array has.
     + `<h2 style="--base: #BADA55;">Header Text</2>`
 
 #### 04 Array Cardio Day 1
-* ...
+* practice with array methods (map, reduce, sort, filter)
