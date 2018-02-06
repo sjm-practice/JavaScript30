@@ -74,7 +74,14 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
-
+    const totalYears = inventors.reduce((total, inventor) => {
+      return total + inventor.passed - inventor.year;
+    }, 0);
+    console.log("inventors total age:", totalYears);
+    
+    const ty2 = inventors.map(inventor => inventor.passed - inventor.year).reduce((ty2, age) => ty2 + age);
+    console.log("inventors total age(2):", ty2);
+    
     // 5. Sort the inventors by years lived
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -86,7 +93,8 @@
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
-    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 
+    'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
 
   </script>
 </body>
