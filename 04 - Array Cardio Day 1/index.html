@@ -83,7 +83,41 @@
     console.log("inventors total age(2):", ty2);
     
     // 5. Sort the inventors by years lived
+    const sortedInventors = inventors.sort((a, b) => {
+      const aAge = a.passed - a.year;
+      const bAge = b.passed - b.year;
 
+      if (aAge < bAge) {
+        return -1;
+      }
+
+      if (aAge > bAge) {
+        return 1;
+      }
+
+      return 0;
+    });
+    console.log("inventors sorted by age:", sortedInventors);
+
+    const sI2 = inventors.map(inventor => {
+      return {
+        ...inventor,
+        age: inventor.passed - inventor.year,
+      };
+    }).sort((a, b) => {
+      if (a.age < b.age) {
+        return -1;
+      }
+
+      if (a.age > b.age) {
+        return 1;
+      }
+
+      return 0;
+    });
+    console.log("inventors sorted by age(2)", sI2);
+    
+    
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
