@@ -124,6 +124,9 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const lastNameSort = inventors.sort((a, b) => a.last.localeCompare(b.last));
+    console.log("last name sort:", lastNameSort);
+    
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
