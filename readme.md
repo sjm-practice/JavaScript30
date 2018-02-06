@@ -11,7 +11,7 @@ Course repo: https://github.com/wesbos/JavaScript30
 ## Items Learned
 #### 01 Drum Kit
 * you can grab an audio element (document.querySelectory), then play it using a method call
-  - `const audio = document.querySelector("audio"]);`
+  - `const audio = document.querySelector("audio");`
   - `audio.play();`
 * transition end event "transitionend"
 * in an event listener function, 'this' is the element that the event was called on
@@ -34,3 +34,6 @@ but notice, NodeList does not have many of the functions / methods an Array has.
 * scoping / cascading does apply to variables
   - e.g. if you at a lower level, assign a different value to a variable, the value will be applied just in that scope
     + `<h2 style="--base: #BADA55;">Header Text</2>`
+
+#### 04 Array Cardio Day 1
+* ...
