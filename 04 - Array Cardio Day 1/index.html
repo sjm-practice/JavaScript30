@@ -132,6 +132,16 @@
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 
     'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
 
+    const totals = data.reduce((counterObj, tallyItem) => {
+      if (!counterObj[tallyItem]) {
+        counterObj[tallyItem] = 0;
+      }
+      counterObj[tallyItem]++;
+
+      return counterObj;
+    }, {});
+    console.log("array tally:", totals);
+    
   </script>
 </body>
 
