@@ -42,7 +42,8 @@
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
     const inventors1500s = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
-    console.log("inventors 1500s:", inventors1500s);
+    console.log("inventors 1500s:");
+    console.table(inventors1500s);
     
 
     // Array.prototype.map()
@@ -53,7 +54,8 @@
         last: inventor.last,
       };
     });
-    console.log("inventors names:", inventorsNames);
+    console.log("inventors names:");
+    console.table(inventorsNames);
     
 
     // Array.prototype.sort()
@@ -69,7 +71,8 @@
 
       return 0;
     });
-    console.log("inventors age sort:", inventorsAgeSort);
+    console.log("inventors year born sort:");
+    console.table(inventorsAgeSort);
     
 
     // Array.prototype.reduce()
@@ -85,13 +88,12 @@
     // 5. Sort the inventors by years lived
     const sortedInventors = inventors.sort((a, b) => {
       const aAge = a.passed - a.year;
-      a.age = aAge;
       const bAge = b.passed - b.year;
-      b.age = bAge;
 
       return aAge - bAge;
     });
-    console.log("inventors sorted by age:", sortedInventors);
+    console.log("inventors sorted age:");
+    console.table(sortedInventors);
 
     const sI2 = inventors.map(inventor => {
       return {
@@ -99,7 +101,8 @@
         age: inventor.passed - inventor.year,
       };
     }).sort((a, b) => a.age - b.age);
-    console.log("inventors sorted by age(2)", sI2);
+    console.log("inventors sorted age(2):");
+    console.table(sI2);
     
     
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -109,7 +112,8 @@
     // 7. sort Exercise
     // Sort the people alphabetically by last name
     const lastNameSort = inventors.sort((a, b) => a.last.localeCompare(b.last));
-    console.log("last name sort:", lastNameSort);
+    console.log("last name sort:");
+    console.table(lastNameSort);
     
 
     // 8. Reduce Exercise
