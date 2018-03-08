@@ -37,3 +37,10 @@ but notice, NodeList does not have many of the functions / methods an Array has.
 
 #### 04 Array Cardio Day 1
 * practice with array methods (map, reduce, sort, filter)
+
+#### 05
+* flex looks very powerful, and straightfoward to use, once you know how
+   - this chapter doesn't do much teaching about flex
+   - it explains some capabilities, and tells you what to type
+* Check out his full tutorial, that should be a good starting point (and more comprehensive)
+  - "What The Flexbox"   (Wes Bos Flex tutorial) 
