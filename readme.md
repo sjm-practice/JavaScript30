@@ -38,9 +38,13 @@ but notice, NodeList does not have many of the functions / methods an Array has.
 #### 04 Array Cardio Day 1
 * practice with array methods (map, reduce, sort, filter)
 
-#### 05
+#### 05 Flex Panel Gallery
 * flex looks very powerful, and straightfoward to use, once you know how
    - this chapter doesn't do much teaching about flex
    - it explains some capabilities, and tells you what to type
 * Check out his full tutorial, that should be a good starting point (and more comprehensive)
   - "What The Flexbox"   (Wes Bos Flex tutorial) 
+
+#### 06 Type Ahead
+* Fetch API - javascript / browsers now have a built in ajax like functionality, 'fetch'
+  - returns a promise 
