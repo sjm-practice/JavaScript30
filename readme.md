@@ -48,3 +48,23 @@ but notice, NodeList does not have many of the functions / methods an Array has.
 #### 06 Type Ahead
 * Fetch API - javascript / browsers now have a built in ajax like functionality, 'fetch'
   - returns a promise 
+
+#### 07 Array Cardio Day 2
+* More practice with array functions, was straightforward / similar to others
+
+#### 08 Fun with HTML5 Canvas
+* will do
+
+#### 09 Dev Tools Domination
+* inspect element, break on 'attribute modifications'
+* various console.log formats, techniques
+  - log
+  - log (interpolated string, and formatted)
+  - warn, error, info
+  - assert (logs when provided condition if false)
+  - dir (show properties and methods of an element)
+  - group, groupCollapsed (will group multiple console logs in tree)
+  - count (will list a count next to the log message of how many times it's been logged)
+  - time, timeEnd   (will start and stop a timer, and log the time amount)
+  - table  (displays an array of objects in table format)
+* Was helpful. but expected more dev tools covered than console.log(s) and inspect breakpoint

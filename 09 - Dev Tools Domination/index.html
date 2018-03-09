@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Regular
+    console.log("hello");
+    
+    // Interpolated
+    console.log("hello %s", "Steve");
+    console.log(`hello ${"Steve"}`);
+    
+    // Styled
+    console.log("%c Some text.", "font-size:20px; background: red;");
+    
+    // warning!
+    console.warn("displays warning and stack trace");
+
+    // Error :|
+    console.error("displays error and stack trace");
+    
+    // Info
+    console.info("info and stack trace");
+
+    // Testing  (if false, throws)
+    console.assert(1 === 1, "if true, won't display");
+    console.assert(1 === 2, "if false, will display");
+    
+    const p = document.querySelector("p");
+    console.assert(p.classList.contains("ouch"), "'p' doesn't contain ouch class");
+
+    // clearing   - clears the consol
+    // console.clear();  
+
+    // Viewing DOM Elements
+    console.log(p);  // prints the element source html
+    console.dir(p);  // tree of element properties and methods
+    
+    // Grouping together
+    //   can use group, or groupCollapsed (is collapsed by default)
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`);
+      console.log(`name: ${dog.name}`);
+      console.log(`age: ${dog.age}`);
+      console.groupEnd(`${dog.name}`);
+    });
+
+    // counting
+    console.count("message A");
+    console.count("message A");
+    console.count("message B");
+    console.count("message B");
+    console.count("message A");
+    console.count("message B");
+    console.count("message A");
+
+    // timing
+    console.time("fetch data");
+    fetch("https://api.github.com/users/stevenjmarsh")
+      .then(blob => blob.json())
+      .then(data => {
+        console.timeEnd("fetch data");
+        console.log(data);
+      });
+
+    // table
+    console.table(dogs);
+
+  </script>
+</body>
+
+</html>
