@@ -53,7 +53,7 @@ but notice, NodeList does not have many of the functions / methods an Array has.
 * More practice with array functions, was straightforward / similar to others
 
 #### 08 Fun with HTML5 Canvas
-* will do
+* complete. interesting. some practice with event listeners.
 
 #### 09 Dev Tools Domination
 * inspect element, break on 'attribute modifications'
