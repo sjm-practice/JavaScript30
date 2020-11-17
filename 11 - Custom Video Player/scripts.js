@@ -9,8 +9,17 @@ const ranges = player.querySelectorAll(".player__slider");
 
 // Functions
 const togglePlay = () => {
-  return video.paused ? video.play() : video.pause();
+  const method = video.paused ? 'play' : 'pause';
+  video[method]();
+}
+
+const updateButton = () => {
+  toggle.textContent = video.paused ? '►' : '❚ ❚';
 }
 
 // Event Listeners
 video.addEventListener("click", togglePlay);
+video.addEventListener("play", updateButton);
+video.addEventListener("pause", updateButton);
+
+toggle.addEventListener("click", togglePlay);
